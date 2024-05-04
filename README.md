@@ -58,7 +58,7 @@ rails g model Passkey user:references label:string external_id:string:index:uniq
 
 The following fields are required:
 
-- `label:string` (required, cannot be blank you'll want to scope it to the Devise-enabled model)
+- `label:string` Differentiates Passkeys in the UI. It can be auto generated. Example: `email@test.com SomeBrowser AnApp`
 - `external_id:string`
 - `public_key:string`
 - `sign_count:integer`
